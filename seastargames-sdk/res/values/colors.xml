@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="com_appollogames_semitransparent_white">#77ffffff</drawable>
+    <drawable name="com_appollogames_white">#FFffffff</drawable>
+    <drawable name="com_appollogames_unipay_normal">#FFEEEEEE</drawable>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/u2_account_guest_layout_portrait"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <!-- 标题栏 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/u2_title_bar_layout"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+            android:background="@drawable/login_bg"
+
+            >
+
+            <!-- 图标 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+		    	android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal" >
+
+					<TextView
+		                style="@style/u2_option_reg_style"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="15dp"
+		                android:layout_marginRight="5dp"
+		                android:text="@string/title_guests"
+		                android:textColor="@color/TextColorBlack" >
+		            </TextView>
+            </LinearLayout>
+
+            <!-- 通行证、密码 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="0.01"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/login_main" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <!-- 通行证 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/u2_account_guest_account"
+                            style="@style/u2_option_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:editable="false"
+                            android:hint="@string/writelimit"
+                            android:imeOptions="actionDone"
+                            android:maxLength="16"
+                            android:singleLine="true" 
+                            android:textColor="@color/TextColorWhite"
+                            >
+                        </EditText>
+                    </LinearLayout>
+
+                    <!-- 密码 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/u2_account_guest_password"
+                            style="@style/u2_option_edittext_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="@string/writelimit"
+                            android:imeOptions="actionDone"
+                            android:maxLines="12"
+                            android:singleLine="true" >
+                        </EditText>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/guestbar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!-- 试玩 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.16"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/u2_account_guest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/login_in"
+                    android:text="@string/title_guest"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="20sp" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

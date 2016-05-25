@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="com_appollogames_feedback">用户反馈</string>
+    <string name="com_appollogames_ticket_subject">主题</string>
+    <string name="com_appollogames_ticket_description">描述</string>
+    <string name="com_appollogames_submit">提交</string>
+	<string name="com_appollogames_arrow_left">＜</string>
+	<string name="com_appollogames_arrow_right">＞</string>
+	
+	<string name="com_appollogames_login">登录</string>
+	<string name="com_appollogames_start_game">开始游戏</string>
+	<string name="com_appollogames_login_facebook">登　录</string>
+	<string name="com_appollogames_login_failed">登录失败</string>
+	<string name="com_appollogames_share">分享</string>
+	<string name="com_appollogames_share_facebook">分享</string>
+	<string name="com_appollogames_share_line">LINE</string>
+	<string name="com_appollogames_payment">支付</string>	
+	<string name="com_appollogames_no_data">没有数据</string>	
+	<string name="com_appollogames_viewed">已读</string>
+	<string name="com_appollogames_replied">已回复</string>
+	<string name="com_appollogames_recommend">推荐</string>
+	<string name="com_appollogames_feedback1">客服</string>
+	
+	<string name="com_appollogames_unipay">请选择支付方式</string>
+	<string name="com_appollogames_unipay_sms">短信支付</string>
+	<string name="com_appollogames_unipay_iab">谷歌应用商店支付</string>
+	<string name="com_appollogames_unipay_cashcard">点卡支付</string>
+	<string name="com_appollogames_unipay_mimopay">Mimopay 支付</string>
+	<string name="com_appollogames_unipay_tdp">GoodGames TDP 支付</string>
+	<string name="com_appollogames_account_management">账户管理</string>
+	
+	<string name="com_appollogames_signin_other_error">There was an issue with sign in.  Please try again later.</string>
+	<string name="com_appollogames_account_linking_failed">Account linking failed. It\'s already linked with another Games account.</string>
+	<string name="com_appollogames_ok">好的</string>
+	<string name="com_appollogames_notice">公告</string>
+	<string name="com_appollogames_new_version_available">需要升级</string>
+	<string name="com_appollogames_notice_content">我们强烈建议您使用您的Facebook或Google+帐户同步您的帐户！同步您的帐户，您可以在多个设备上玩游戏，并防止你的游戏进度意外丢失。你确定要继续为“客户”？</string>
+</resources>
