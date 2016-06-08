@@ -37,7 +37,7 @@
     
     
     <color name="AppBackgroundColor">#FFC0E7FA</color>
-	<color name="TextColorBlack">#707070</color>
+	<color name="TextColorBlack">#636363</color>
 	<color name="TextColorWhite">#FFFFFF</color>
 	<color name="TextColorBlue">#0066CC</color>
 	<color name="TextColorRed">#FFE26926</color>

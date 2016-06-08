@@ -1,17 +1,49 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/u2_account_guest_layout_portrait"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/app_bg_repeat" >
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+<LinearLayout  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical" >  
+   
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bt_anniu01"
+        android:text="@string/title_login"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="20sp" >
+    </Button>
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:ems="10"
-        android:inputType="textPassword" >
+    <Button
+        android:id="@+id/userManagerbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bt_anniu01"
+        android:text="@string/sub_title_userman"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="20sp" >
+    </Button>
 
-        <requestFocus />
-    </EditText>
-
-</ScrollView>
+    <Button
+        android:id="@+id/paybutton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bt_anniu01"
+        android:text="@string/paygame"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="20sp" >
+    </Button>
+</LinearLayout>
+</RelativeLayout>

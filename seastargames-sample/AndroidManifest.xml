@@ -4,9 +4,24 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="19"
-        android:targetSdkVersion="21" />
+    <!-- Android 版本要求 -->
+    <uses-sdk android:minSdkVersion="14" />
+    <!-- Android 版本要求 -->
+
+
+    <!-- 基本权限 开始 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 基本权限 结束 -->
 
     <application
         android:allowBackup="true"
@@ -22,6 +37,60 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Google Play Services 开始 -->
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- Google Play Services 结束 -->
+
+        <activity android:name="com.seastargames.activity.UserLoginActivity" />
+        <activity android:name="com.seastargames.activity.UserManagerActivity" />
+        <activity android:name="com.seastargames.activity.UserRegActivity" />
+        <activity android:name="com.seastargames.activity.UserRePassWordActivity" /> 
+        <activity android:name="com.seastargames.activity.LoginActivity" />
+        <activity android:name="com.seastargames.activity.UserFindPwd" />
+        <activity android:name="com.seastargames.activity.GuestActivity" />
+        <activity android:name="com.seastargames.activity.FindPwdActivity" />
+
+         <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider597198010430029"
+            android:exported="true" />
+        
+        
+        
+        <meta-data
+            android:name="st_app_id"
+            android:value="23" />
+        <meta-data
+            android:name="st_app_key"
+            android:value="@string/st_app_key" />
+        <meta-data
+            android:name="st_server_url"
+            android:value="http://10.10.10.21:8080" />
+        <meta-data
+            android:name="payUrl"
+            android:value="" />
     </application>
 
 </manifest>
