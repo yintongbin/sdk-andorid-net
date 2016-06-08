@@ -4,156 +4,136 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:orientation="vertical" 
-    >
+    android:orientation="vertical" >
+
     <!-- 标题栏 -->
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:orientation="vertical" 
-            >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
 
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="290dp"
-             android:layout_marginTop="30dp"
-            android:background="@drawable/login_bg"
+            android:layout_width="350dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bj"
             android:gravity="center_horizontal"
             android:orientation="vertical" >
-            
-             <!-- 图标 -->
-		<LinearLayout 	
-		    android:layout_width="fill_parent"
-		    android:layout_height="50dp"
-		    android:layout_marginLeft="2dp"
-		    android:layout_marginRight="2dp"
-		    android:orientation="vertical" 
-		    >
-		    
-		    <Button
-                   android:id="@+id/u2_usercenter"
-                    android:layout_width="15dp"
+
+            <!-- 图标 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/bj02"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/u2_account_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="4dp"
                     android:background="@drawable/back"
-                    android:layout_height="20dp"
-                     android:layout_marginLeft="8dp"
-                      android:layout_marginTop="15dp"
-                    android:textSize="12sp"
                     android:textColor="@color/TextColorBlack"
-                    >
-                </Button>	    
-		</LinearLayout>
+                    android:textSize="12sp" >
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/u2_account_login_reg"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/bt_anniu03"
+                        android:text="@string/title_register"
+                        android:textColor="@color/TextColorBlack"
+                        android:textSize="12sp" >
+                    </Button>
+                </LinearLayout>
+  
+            </LinearLayout>
 
             <!-- 通行证、密码 -->
 
-			<RelativeLayout 
-			    android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_marginTop="5dp"
-                android:layout_width="fill_parent"
-                android:layout_height="90dp"
-                android:background="@drawable/login_main"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:orientation="vertical" >
-
-                <!-- 通行证 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
 
                 <LinearLayout
-                    android:layout_width="200dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="25dp"
-                     android:layout_marginTop="8dp"
-                    android:gravity="center_vertical"                   
-                    android:orientation="horizontal" >
-                    <AutoCompleteTextView
-                        android:id="@+id/u2_account_login_account"
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
-                        android:layout_weight="1"
-                        android:maxLength="16"
-                        android:inputType="textAutoComplete"
-                        style="@style/u2_option_text_style"
-                        android:singleLine="true"
-                        android:nextFocusDown="@+id/u2_account_login_password"
-                        android:imeOptions="actionNext"
-                        android:hint="@string/writelimit"
-                        >
-                    </AutoCompleteTextView>
-                    <ImageView
-                        android:id="@+id/quickdelete"
-                        android:src="@drawable/ic_dial_action_delete"
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
-                        android:layout_marginRight="8dp"
-                        android:visibility="invisible"
-                         >
-                    	</ImageView>
-					<ImageView
-                        android:id="@+id/logineduser"
-                        android:src="@drawable/btn_more"
-                        android:layout_width="30dp"
-                        android:scaleType="centerInside"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="5dp">
-                    	</ImageView>
-                    <ImageView
-                        android:id="@+id/u2_account_login_more"
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
-                         >
-                    </ImageView>
+                    android:layout_width="350dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <!-- 通行证 -->
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/kuang02"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/u2_account_login_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/writelimit"
+                            android:imeOptions="actionNext" 
+                            android:maxLength="16"
+                            android:nextFocusDown="@+id/u2_account_login_password"
+                            android:singleLine="true" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <!-- 密码 -->
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/kuang02"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/u2_account_login_password"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/writelimit" 
+                            android:inputType="textPassword"
+                            android:maxLines="12"
+                            android:singleLine="true" >
+                        </EditText>
+                    </LinearLayout>
                 </LinearLayout>
 
-                <!-- 密码 -->
+                <ProgressBar
+                    android:id="@+id/loadingbar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
 
-                <LinearLayout
-                    android:layout_width="200dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal" >
-
-                    <EditText
-                        android:id="@+id/u2_account_login_password"
-                        android:layout_width="fill_parent"
-                        style="@style/u2_option_edittext_style"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:maxLines="12"
-                        android:imeOptions="actionDone"
-                        android:inputType="textPassword"
-                        android:singleLine="true" 
-						android:hint="@string/writelimit"
-                        >
-                    </EditText>
-                    <ImageView
-                        android:id="@+id/quickdel_pass"
-                        android:src="@drawable/ic_dial_action_delete"
-                        android:layout_marginRight="43dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
-                        android:visibility="invisible"
-                         >
-                    	</ImageView>
-                </LinearLayout>
-                
-                
-            </LinearLayout>
-            <ProgressBar
-			    android:id="@+id/loadingbar"
-			    android:visibility="gone"
-			    android:layout_centerInParent="true"
-			    style="?android:attr/progressBarStyleLarge"
-			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content" />
-			</RelativeLayout>
-            
             <!-- 登录 -->
 
             <LinearLayout
@@ -163,181 +143,78 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
-
-                <Button
-                     android:id="@+id/u2_account_login_log"
-                    
-                    android:layout_width="240dp"
-                    android:layout_height="25dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="17dp"
-                    android:background="@drawable/login_in"
-                    android:text="@string/title_login"
-                    android:textColor="@color/TextColorBlack"
-                    android:textSize="12sp" />
             </LinearLayout>
 
-
             <!-- 注册、试玩 -->
+
             <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
 
                 <Button
-                    android:id="@+id/u2_account_login_reg"
-                    android:layout_width="118dp"
-                    android:layout_height="25dp"
-                    android:layout_marginRight="4dp"
-                    android:background="@drawable/login_reg"
-                    android:text="@string/title_register"
+                    android:id="@+id/u2_account_find_pwd"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp" 
+                    android:text="@string/findpass"
                     android:textColor="@color/TextColorBlack"
-                    android:textSize="12sp" >
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:textSize="16sp" >
                 </Button>
 
-                <Button
-                   android:id="@+id/u2_account_guest_log"
-                    android:layout_width="118dp"
-                    android:background="@drawable/login_test"
-                    android:layout_height="25dp"
-                    android:textSize="12sp"
-                    android:textColor="@color/TextColorBlack"
-                    android:text="@string/title_guest">
-                </Button>
-                
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="14dp" 
+                    android:gravity="right"
+                    android:orientation="horizontal" >
 
+                    <Button
+                        android:id="@+id/u2_account_login_log"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bt_anniu04"
+                        android:text="@string/title_login"
+                        android:textColor="@color/TextColorWhite"
+                        android:textSize="14sp" />
+                </LinearLayout>
             </LinearLayout>
-
-
             <!-- 忘记密码 -->
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="30dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:visibility="visible" >
-
-                <TextView
-                    android:id="@+id/u2_tv_find"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/user_forgetpass"
-                    android:textColor="@color/TextColorWhite"
-                    android:textSize="12sp"
-                     />
-                
-				
-            </LinearLayout>
-            <!-- 忘记密码 -->
-
-				<LinearLayout
-				    android:layout_width="fill_parent"
-				    android:layout_height="wrap_content"
-				    android:orientation="horizontal"
-				    android:layout_marginLeft="10dp"
-				    android:visibility="visible" >
-
-					<TextView
-					    android:id="@+id/TextView01"
-					    android:layout_width="wrap_content"
-					    android:layout_height="wrap_content"
-					    android:text="@string/user_other"
-					    android:textColor="@color/TextColorWhite"
-					    android:textSize="10sp" 
-					    />
-				
-            </LinearLayout>
-<LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10dp"
-                android:orientation="horizontal"
-                android:visibility="visible" >
-				<!-- <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" /> -->
-                <Button
-                    android:id="@+id/u2_fbooklogin"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginRight="4dp"
-                    android:background="@drawable/login_fb"
-                    android:onClick="onClick"
-                    >
-                </Button> 
-                
-                <Button
-                    android:id="@+id/u2_emaillogin"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginRight="4dp"
-                    android:background="@drawable/login_email"
-                    android:textSize="12sp" >
-                </Button>
-                
-				
-            </LinearLayout>
-				
-           <!-- <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:visibility="visible" >
-
-                <TextView
-                    android:id="@+id/u2_tv_find"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/user_kefu"
-                    android:textColor="@color/TextColorBlack" />
-                
-				
-            </LinearLayout>
-             -->
-            <LinearLayout
                 android:layout_marginTop="10dp"
-                android:layout_width="fill_parent"
-                android:layout_height="30dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:visibility="gone" >
 
-                 <TextView
-                     android:id="@+id/u2_tv_kefu"
+                <TextView
+                    android:id="@+id/u2_tv_kefu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/kefu"
-                    android:textColor="@color/TextColorBlack"
-                      > 
+                    android:textColor="@color/TextColorBlack" >
                 </TextView>
             </LinearLayout>
-             <LinearLayout
-                android:layout_marginTop="10dp"
+
+            <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="30dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:visibility="gone" >
-
-                 <TextView
-                     android:id="@+id/u2_tv_worktime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/worktime"
-                    android:textColor="@color/TextColorBlack"
-                      > 
-                </TextView>
             </LinearLayout>
-             </LinearLayout>
         </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

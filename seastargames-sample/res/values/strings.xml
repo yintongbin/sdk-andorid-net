@@ -2,23 +2,18 @@
 <resources>
 
     <string name="app_name">Sample</string>
-	
-	<string name="auth_authcenter">Authentication</string>
+    <string name="auth_authcenter">Authentication</string>
     <string name="auth_account">Manage</string>
     <string name="auth_deauth">Deauth</string>
     <string name="not_logged_in">Not logged in</string>
-    
     <string name="bill_billcenter">Billing Center</string>
     <string name="bill_googleiab">Google Play In-App-Billing</string>
-    
     <string name="track_create_character">Create Character</string>
     <string name="track_tutorial_start">Tutorial Start</string>
     <string name="track_tutorial_complete">Tutorial Complete</string>
     <string name="track_cdn_start">CDN Start</string>
     <string name="track_cdn_complete">CDN Complete</string>
-    
     <string name="ppa_tutorial_complete">Complete Tutorial</string>
-    
     <string name="share_to_facebook_timeline">Share to Facebook Timeline</string>
     <string name="query_facebook_app_friends">Query Facebook App Friends</string>
     <string name="invite_facebook_game_requests">Invite Facebook Game Requests</string>
@@ -26,11 +21,12 @@
     <string name="askfor_facebook_game_requests">Askfor Facebook Game Requests</string>
     <string name="query_facebook_game_requests">Query Facebook Game Requests</string>
     <string name="delete_facebook_game_requests">Delete Facebook Game Requests</string>
-    
     <string name="achievement_unlock">Unlock Achievement</string>
     <string name="achievement_increment">Increment Achievement</string>
     <string name="achievement_display">Display Achievements</string>
-    
     <string name="loading_status_adcolony_v4vc">Watch Adcolony video to get the Credits.</string>
+    <string name="facebook_app_id">1695550704031155</string>
+    <string name="app_id">952031205969</string>
+    <string name="st_app_key">123456</string>
 
 </resources>
